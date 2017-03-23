@@ -1,8 +1,10 @@
+# .kitchen.yml
+
 ---
 driver:
   name: docker
 
-        
+
 platforms:
   - name: centos
     driver:
@@ -12,7 +14,15 @@ provisioner:
   name: chef_solo
 
 suites:
-  - name: default
+  - name: source
     run_list:
       - recipe[django::default]
     attributes:
+      vim:
+        install_method: "source"
+  - name: package
+    run_list:
+      - recipe[django::default]
+    attributes:
+      vim:
+        install_method: "package"
