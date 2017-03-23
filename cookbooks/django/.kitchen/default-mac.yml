@@ -1,0 +1,9 @@
+---
+last_error: Fog::JSON::DecodeError
+sudo: true
+port: 22
+ssh_key: 
+forward_agent: 
+username: root
+hostname: 10.21.107.80
+password: 

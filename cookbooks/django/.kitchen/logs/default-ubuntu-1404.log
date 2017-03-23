@@ -1,0 +1,36 @@
+I, [2017-03-22T12:12:14.069857 #52514]  INFO -- default-ubuntu-1404: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2017-03-22T12:12:14.069980 #52514]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2017-03-22T12:12:14.070768 #52514]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m0.00s).
+I, [2017-03-22T12:12:14.070905 #52514]  INFO -- default-ubuntu-1404: -----> Testing <default-ubuntu-1404>
+I, [2017-03-22T12:12:14.070977 #52514]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+E, [2017-03-22T12:12:14.071381 #52514] ERROR -- default-ubuntu-1404: Create failed on instance <default-ubuntu-1404>.
+E, [2017-03-22T12:12:14.071464 #52514] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2017-03-22T12:12:14.071493 #52514] ERROR -- default-ubuntu-1404: Class: URI::InvalidURIError
+E, [2017-03-22T12:12:14.071508 #52514] ERROR -- default-ubuntu-1404: Message: bad URI(is not URI?): 
+E, [2017-03-22T12:12:14.071519 #52514] ERROR -- default-ubuntu-1404: ----------------------
+E, [2017-03-22T12:12:14.071530 #52514] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2017-03-22T12:12:14.071543 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/2.1.0/uri/common.rb:176:in `split'
+E, [2017-03-22T12:12:14.071555 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/2.1.0/uri/common.rb:211:in `parse'
+E, [2017-03-22T12:12:14.071566 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/2.1.0/uri/common.rb:747:in `parse'
+E, [2017-03-22T12:12:14.071577 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/gems/2.1.0/gems/kitchen-cloudstack-0.22.0/lib/kitchen/driver/cloudstack.rb:38:in `compute'
+E, [2017-03-22T12:12:14.071610 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/gems/2.1.0/gems/kitchen-cloudstack-0.22.0/lib/kitchen/driver/cloudstack.rb:71:in `create_server'
+E, [2017-03-22T12:12:14.071621 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/gems/2.1.0/gems/kitchen-cloudstack-0.22.0/lib/kitchen/driver/cloudstack.rb:85:in `create'
+E, [2017-03-22T12:12:14.071632 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `public_send'
+E, [2017-03-22T12:12:14.071643 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `block in perform_action'
+E, [2017-03-22T12:12:14.071654 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-03-22T12:12:14.071667 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-03-22T12:12:14.071679 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2017-03-22T12:12:14.071690 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-03-22T12:12:14.071700 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `perform_action'
+E, [2017-03-22T12:12:14.071711 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:370:in `create_action'
+E, [2017-03-22T12:12:14.071722 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-03-22T12:12:14.071733 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-03-22T12:12:14.071744 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-03-22T12:12:14.071760 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:157:in `verify'
+E, [2017-03-22T12:12:14.071773 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:186:in `block in test'
+E, [2017-03-22T12:12:14.071807 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2017-03-22T12:12:14.071821 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:182:in `test'
+E, [2017-03-22T12:12:14.071832 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-03-22T12:12:14.071843 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-03-22T12:12:14.071854 #52514] ERROR -- default-ubuntu-1404: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-03-22T12:12:14.071865 #52514] ERROR -- default-ubuntu-1404: ----End Backtrace-----

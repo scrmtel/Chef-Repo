@@ -1,0 +1,51 @@
+I, [2017-03-22T13:45:48.109886 #52694]  INFO -- default-centos65: -----> Cleaning up any prior instances of <default-centos65>
+I, [2017-03-22T13:45:48.110074 #52694]  INFO -- default-centos65: -----> Destroying <default-centos65>...
+I, [2017-03-22T13:45:48.111128 #52694]  INFO -- default-centos65: Finished destroying <default-centos65> (0m0.00s).
+I, [2017-03-22T13:45:48.111290 #52694]  INFO -- default-centos65: -----> Testing <default-centos65>
+I, [2017-03-22T13:45:48.111438 #52694]  INFO -- default-centos65: -----> Creating <default-centos65>...
+E, [2017-03-22T13:45:48.478371 #52694] ERROR -- default-centos65: Create failed on instance <default-centos65>.
+E, [2017-03-22T13:45:48.478458 #52694] ERROR -- default-centos65: ------Exception-------
+E, [2017-03-22T13:45:48.478480 #52694] ERROR -- default-centos65: Class: Fog::JSON::DecodeError
+E, [2017-03-22T13:45:48.478494 #52694] ERROR -- default-centos65: Message: 822: unexpected token at '<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="https://btgscsc.cloud.bt.com/bt-gs-vso-csc?apiKey=GH35O6sWhAj-OAX6V3e1edX2LFQ62T6CG42sL9HA8oAt7rwPlGKILd9Cav4YnhlIEOF_B5yhnGw44mO0kNjqlg&amp;command=deployVirtualMachine&amp;displayname=default-centos65-root-mac-w36crvvg&amp;response=json&amp;signature=mZkhy67Zcilwy8Rkr6Qeh29GWzY%253D">here</a>.</p>
+<hr>
+<address>Apache/2.2.15 (Oracle) Server at www.cloud.bt.com Port 443</address>
+</body></html>
+'
+E, [2017-03-22T13:45:48.478507 #52694] ERROR -- default-centos65: ----------------------
+E, [2017-03-22T13:45:48.478519 #52694] ERROR -- default-centos65: ------Backtrace-------
+E, [2017-03-22T13:45:48.478548 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/json-1.8.6/lib/json/common.rb:155:in `parse'
+E, [2017-03-22T13:45:48.478561 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/json-1.8.6/lib/json/common.rb:155:in `parse'
+E, [2017-03-22T13:45:48.478573 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/multi_json-1.12.1/lib/multi_json/adapters/json_common.rb:14:in `load'
+E, [2017-03-22T13:45:48.478585 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/multi_json-1.12.1/lib/multi_json/adapter.rb:21:in `load'
+E, [2017-03-22T13:45:48.478597 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/multi_json-1.12.1/lib/multi_json.rb:122:in `load'
+E, [2017-03-22T13:45:48.478609 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/fog-json-1.0.2/lib/fog/json.rb:40:in `decode'
+E, [2017-03-22T13:45:48.478621 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/fog-1.40.0/lib/fog/cloudstack/compute.rb:642:in `rescue in issue_request'
+E, [2017-03-22T13:45:48.478632 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/fog-1.40.0/lib/fog/cloudstack/compute.rb:633:in `issue_request'
+E, [2017-03-22T13:45:48.478644 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/fog-1.40.0/lib/fog/cloudstack/compute.rb:597:in `request'
+E, [2017-03-22T13:45:48.478675 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/fog-1.40.0/lib/fog/cloudstack/requests/compute/deploy_virtual_machine.rb:22:in `deploy_virtual_machine'
+E, [2017-03-22T13:45:48.478689 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/kitchen-cloudstack-0.22.0/lib/kitchen/driver/cloudstack.rb:71:in `create_server'
+E, [2017-03-22T13:45:48.478701 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/kitchen-cloudstack-0.22.0/lib/kitchen/driver/cloudstack.rb:85:in `create'
+E, [2017-03-22T13:45:48.478713 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `public_send'
+E, [2017-03-22T13:45:48.478724 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `block in perform_action'
+E, [2017-03-22T13:45:48.478736 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-03-22T13:45:48.478759 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-03-22T13:45:48.478773 #52694] ERROR -- default-centos65: /usr/lib64/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2017-03-22T13:45:48.478785 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-03-22T13:45:48.478818 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `perform_action'
+E, [2017-03-22T13:45:48.478832 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:370:in `create_action'
+E, [2017-03-22T13:45:48.478844 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-03-22T13:45:48.478856 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-03-22T13:45:48.478867 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-03-22T13:45:48.478879 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:157:in `verify'
+E, [2017-03-22T13:45:48.478890 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:186:in `block in test'
+E, [2017-03-22T13:45:48.478902 #52694] ERROR -- default-centos65: /usr/lib64/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2017-03-22T13:45:48.478913 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:182:in `test'
+E, [2017-03-22T13:45:48.478924 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-03-22T13:45:48.478936 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-03-22T13:45:48.478947 #52694] ERROR -- default-centos65: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-03-22T13:45:48.478959 #52694] ERROR -- default-centos65: ----End Backtrace-----

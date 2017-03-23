@@ -1,0 +1,27 @@
+E, [2017-03-22T12:55:25.209237 #52593] ERROR -- Kitchen: ------Exception-------
+E, [2017-03-22T12:55:25.209304 #52593] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2017-03-22T12:55:25.209479 #52593] ERROR -- Kitchen: Message: Kitchen YAML file /root/chef-repo/cookbooks/django/.kitchen/.kitchen.yml does not exist.
+E, [2017-03-22T12:55:25.209530 #52593] ERROR -- Kitchen: ----------------------
+E, [2017-03-22T12:55:25.209547 #52593] ERROR -- Kitchen: ------Backtrace-------
+E, [2017-03-22T12:55:25.209561 #52593] ERROR -- Kitchen: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/loader/yaml.rb:71:in `read'
+E, [2017-03-22T12:55:25.209575 #52593] ERROR -- Kitchen: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:152:in `data'
+E, [2017-03-22T12:55:25.209589 #52593] ERROR -- Kitchen: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:131:in `suites'
+E, [2017-03-22T12:55:25.209602 #52593] ERROR -- Kitchen: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:182:in `filter_instances'
+E, [2017-03-22T12:55:25.209614 #52593] ERROR -- Kitchen: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:141:in `build_instances'
+E, [2017-03-22T12:55:25.209627 #52593] ERROR -- Kitchen: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:117:in `instances'
+E, [2017-03-22T12:55:25.209640 #52593] ERROR -- Kitchen: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:112:in `filtered_instances'
+E, [2017-03-22T12:55:25.209653 #52593] ERROR -- Kitchen: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:142:in `parse_subcommand'
+E, [2017-03-22T12:55:25.209665 #52593] ERROR -- Kitchen: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/command/list.rb:30:in `call'
+E, [2017-03-22T12:55:25.209678 #52593] ERROR -- Kitchen: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/cli.rb:53:in `perform'
+E, [2017-03-22T12:55:25.209691 #52593] ERROR -- Kitchen: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/cli.rb:121:in `list'
+E, [2017-03-22T12:55:25.209703 #52593] ERROR -- Kitchen: /usr/lib64/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2017-03-22T12:55:25.209716 #52593] ERROR -- Kitchen: /usr/lib64/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2017-03-22T12:55:25.209729 #52593] ERROR -- Kitchen: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/cli.rb:334:in `invoke_task'
+E, [2017-03-22T12:55:25.209741 #52593] ERROR -- Kitchen: /usr/lib64/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2017-03-22T12:55:25.209754 #52593] ERROR -- Kitchen: /usr/lib64/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2017-03-22T12:55:25.209767 #52593] ERROR -- Kitchen: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2017-03-22T12:55:25.209784 #52593] ERROR -- Kitchen: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+E, [2017-03-22T12:55:25.209816 #52593] ERROR -- Kitchen: /usr/lib64/ruby/gems/2.1.0/gems/test-kitchen-1.16.0/bin/kitchen:13:in `<top (required)>'
+E, [2017-03-22T12:55:25.209831 #52593] ERROR -- Kitchen: /usr/bin/kitchen:23:in `load'
+E, [2017-03-22T12:55:25.209844 #52593] ERROR -- Kitchen: /usr/bin/kitchen:23:in `<main>'
+E, [2017-03-22T12:55:25.209857 #52593] ERROR -- Kitchen: ----End Backtrace-----

@@ -1,0 +1,7 @@
+ name = "mac"
+  display_name = "mac"
+  service_offering= "1vCPU-2660MHz-4GB-RAM"
+  keypair = "internalbtwlmsdev0sshkey"
+  template = "internal.bt.wlms.centos6.4v1.0"
+  kitchen listnetwork="internal.btwlms.c1-stub02"
+  zone = "GB-LON-GH-G-V-A-R-S-001"
