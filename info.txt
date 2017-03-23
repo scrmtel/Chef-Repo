@@ -1,0 +1,3 @@
+#This example has been taken from the below link
+
+https://semaphoreci.com/community/tutorials/integration-testing-for-chef-driven-infrastructure-with-test-kitchen
